@@ -6,7 +6,7 @@
 #if defined(__APPLE__) || defined(__MACOSX)
 #include <OpenCL/cl.hpp>
 #else
-#include <CL/cl2.hpp>   // if missing, try <CL/opencl.hpp>
+#include <CL/cl2.hpp>
 #endif
 
 #include <array>
