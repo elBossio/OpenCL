@@ -25,3 +25,17 @@
 |----------------|------------:|-------------:|---------------:|--------------:|----------------:|-----------------:|-----------------:|
 | reduce         | 13585 us    | 49232 us     | 44901 us       | 4206 us       | 123 us          | 9.26236 GB/s     | 29.9166 GB/s     |
 | scan-inclusive | 17094 us    | 188411 us    | 51020 us       | 124279 us     | 13112 us        | 7.36101 GB/s     | 1.01247 GB/s     |
+
+
+# Task 3 — Stream compaction (filter) on GPU (OpenCL)
+
+## Device info
+- Platform name: NVIDIA CUDA  
+- Device name: NVIDIA GeForce RTX 2060  
+
+## Results
+
+| Function | OpenMP Time | OpenCL Total | OpenCL Copy-in | OpenCL Kernel | OpenCL Copy-out |
+|---------|------------:|-------------:|---------------:|--------------:|----------------:|
+| filter  | 9861 us     | 13326 us     | 8223 us        | 3177 us       | 1925 us         |
+
